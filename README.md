@@ -7,7 +7,7 @@
 ### GET
 
 Sample Request:
-`GET /`
+`GET /films`
 
 Sample Response:
 ```
@@ -41,6 +41,9 @@ Sample Response:
 ```
 
 ### POST
+
+Sample Request:
+`POST /films`
 
 Sample Request Body:
 ```
@@ -79,7 +82,7 @@ Sample Response:
 ### GET
 
 Sample Request:
-`GET /1`
+`GET /films/1`
 
 Sample Response:
 ```
@@ -112,7 +115,7 @@ Sample Response:
 ### PUT
 
 Sample Request:
-`PUT /1`
+`PUT /films/1`
 
 Sample Request Body:
 ```
@@ -152,18 +155,18 @@ Sample Response:
 ### DELETE
 
 Sample Request:
-`DELETE /1`
+`DELETE /films/1`
 
 This method has no response body.
 
-# /:filmID/genres
+# /films/:filmID/genres
 
 ## Available Methods:
 
 ### GET
 
 Sample Request:
-`GET /1/genres`
+`GET /films/1/genres`
 
 Sample Response:
 ```
@@ -188,7 +191,7 @@ Sample Response:
 Returns all genres for selected film.
 
 Sample Request:
-`POST /1/genres`
+`POST /films/1/genres`
 
 Sample Request Body:
 ```
@@ -221,7 +224,7 @@ Sample Response:
 ]
 ```
 
-# /:filmID/genres/:genreID
+# /films/:filmID/genres/:genreID
 
 ## Available Methods:
 
@@ -230,7 +233,7 @@ Sample Response:
 Returns all genres for selected film.
 
 Sample Request:
-`DELETE /1/genres/1`
+`DELETE /films/1/genres/1`
 
 Sample Response:
 ```
@@ -244,14 +247,14 @@ Sample Response:
 ]
 ```
 
-# /:filmID/credits
+# /films/:filmID/credits
 
 ## Available Methods:
 
 ### GET
 
 Sample Request:
-`GET /1/credits`
+`GET /films/1/credits`
 
 Sample Response:
 ```
@@ -290,7 +293,7 @@ Sample Response:
 ### POST
 
 Sample Request:
-`POST /1/credits`
+`POST /films/1/credits`
 
 Sample Request Body:
 ```
@@ -348,7 +351,7 @@ Sample Response:
 ]
 ```
 
-# /:filmID/credits/:filmCreditID
+# /films/:filmID/credits/:filmCreditID
 
 ## Available Methods:
 
@@ -357,7 +360,7 @@ Sample Response:
 Returns all credits for selected film.
 
 Sample Request:
-`DELETE /1/credits/1`
+`DELETE /films/1/credits/1`
 
 Sample Response:
 ```
