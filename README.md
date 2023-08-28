@@ -309,7 +309,7 @@ Sample Response:
 			imgURL: "keanureeves.jpg"
 		},
 		role: {
-			roleID: 1,
+			roleID: 0,
 			name: "Actor",
 			color: "#12be29",
 			characters: [
@@ -366,7 +366,7 @@ Sample Response:
 			imgURL: "keanureeves.jpg"
 		},
 		role: {
-			roleID: 1,
+			roleID: 0,
 			name: "Actor",
 			color: "#12be29",
 			characters: [
@@ -770,7 +770,7 @@ Sample Response:
 			imgURL: "peterdinklage.jpg"
 		},
 		role: {
-			roleID: 1,
+			roleID: 0,
 			name: "Actor",
 			color: "#12be29",
 			characters: [
@@ -792,7 +792,7 @@ Sample Response:
 			imgURL: "iainglen.jpg"
 		},
 		role: {
-			roleID: 1,
+			roleID: 0,
 			name: "Actor"
 			color: "#12be29",
 			characters: [
@@ -842,7 +842,7 @@ Sample Response:
 			imgURL: "peterdinklage.jpg"
 		},
 		role: {
-			roleID: 1,
+			roleID: 0,
 			name: "Actor",
 			color: "#12be29",
 			characters: [
@@ -864,7 +864,7 @@ Sample Response:
 			imgURL: "iainglen.jpg"
 		},
 		role: {
-			roleID: 1,
+			roleID: 0,
 			name: "Actor"
 			color: "#12be29",
 			characters: [
@@ -886,7 +886,7 @@ Sample Response:
 			imgURL: "emiliaclarke.jpg"
 		},
 		role: {
-			roleID: 1,
+			roleID: 0,
 			name: "Actor"
 			color: "#12be29",
 			characters: [
@@ -925,7 +925,7 @@ Sample Response:
 			imgURL: "iainglen.jpg"
 		},
 		role: {
-			roleID: 1,
+			roleID: 0,
 			name: "Actor"
 			color: "#12be29",
 			characters: [
@@ -947,7 +947,7 @@ Sample Response:
 			imgURL: "emiliaclarke.jpg"
 		},
 		role: {
-			roleID: 1,
+			roleID: 0,
 			name: "Actor"
 			color: "#12be29",
 			characters: [
