@@ -1,5 +1,5 @@
 # myboxoffice-server
-REST API for serving MBO data
+#### A REST API for serving MyBoxOffice data
 
 ## /films
 
@@ -38,34 +38,38 @@ Sample Response:
 ]
 ```
 
-Input:
-POST /
-	{
-		title: "Star Wars",
-		year: 1977,
-		imgURL: "starwars.jpg"
-		genres: [8]
-	}
-Output:
-	{
-		filmID: 2,
-		title: "Star Wars",
-		year: 1977,
-		watched: false,
-		rating: 0,
-		owned: false,
-		imgURL: "starwars.jpg",
-		favorite: false,
-		genres: [
-			{
-				genreID: 8,
-				name: "scifi",
-				rating: 9,
-				color: "#3e33f5"
-			}
-		]
-	}
-	
+#### POST /
+
+Sample Request Body:
+```
+{
+	title: "Star Wars",
+	year: 1977,
+	imgURL: "starwars.jpg"
+	genres: [8]
+}
+```
+Sample Response:
+```
+{
+	filmID: 2,
+	title: "Star Wars",
+	year: 1977,
+	watched: false,
+	rating: 0,
+	owned: false,
+	imgURL: "starwars.jpg",
+	favorite: false,
+	genres: [
+		{
+			genreID: 8,
+			name: "scifi",
+			rating: 9,
+			color: "#3e33f5"
+		}
+	]
+}
+```
 Input:
 GET /1
 Output:
