@@ -243,6 +243,12 @@ Sample Response:
 		name: "scifi",
 		rating: 9,
 		color: "#3e33f5"
+	},
+	{
+		genreID: 3,
+		name: "comedy",
+		rating: 9,
+		color: "#ffffff"
 	}
 ]
 ```
