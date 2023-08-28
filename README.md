@@ -3,37 +3,39 @@ REST API for serving MBO data
 
 ## /films
 
-### GET /
+### Available Methods:
 
-Output:
+#### GET /
+
+Sample Response:
 ```
-	[
-		{
-			filmID: 1,
-			title: "The Matrix",
-			year: 1999,
-			watched: true,
-			rating: 10,
-			owned: false,
-			imgURL: "thematrix.jpg",
-			favorite: true,
-			genres: [
-				{
-					genreID: 1,
-					name: "action",
-					rating: 6,
-					color: "#156f3f"
-				},
-				{
-					genreID: 8,
-					name: "scifi",
-					rating: 9,
-					color: "#3e33f5"
-				}
-			]
-		},
-		...
-	]
+[
+	{
+		filmID: 1,
+		title: "The Matrix",
+		year: 1999,
+		watched: true,
+		rating: 10,
+		owned: false,
+		imgURL: "thematrix.jpg",
+		favorite: true,
+		genres: [
+			{
+				genreID: 1,
+				name: "action",
+				rating: 6,
+				color: "#156f3f"
+			},
+			{
+				genreID: 8,
+				name: "scifi",
+				rating: 9,
+				color: "#3e33f5"
+			}
+		]
+	},
+	...
+]
 ```
 
 Input:
