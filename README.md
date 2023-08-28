@@ -6,6 +6,9 @@
 
 ### GET /
 
+Sample Request:
+`GET /`
+
 Sample Response:
 ```
 [
