@@ -311,15 +311,13 @@ Sample Response:
 		role: {
 			roleID: 0,
 			name: "Actor",
-			color: "#12be29",
-			characters: [
-				{
-					characterID: 1,
-					name: "Neo",
-					color: "#798436",
-					rating: 10
-				}
-			]
+			color: "#12be29"
+		},
+		character: {
+			characterID: 1,
+			name: "Neo",
+			color: "#798436",
+			rating: 10
 		}
 	},
 	{
@@ -368,15 +366,13 @@ Sample Response:
 		role: {
 			roleID: 0,
 			name: "Actor",
-			color: "#12be29",
-			characters: [
-				{
-					characterID: 1,
-					name: "Neo",
-					color: "#798436",
-					rating: 10
-				}
-			]
+			color: "#12be29"
+		},
+		character: {
+			characterID: 1,
+			name: "Neo",
+			color: "#798436",
+			rating: 10
 		}
 	},
 	{
@@ -772,15 +768,13 @@ Sample Response:
 		role: {
 			roleID: 0,
 			name: "Actor",
-			color: "#12be29",
-			characters: [
-				{
-					characterID: 10,
-					name: "Tyrion Lannister",
-					color: "#ffffff",
-					rating: 8
-				}
-			]
+			color: "#12be29"
+		},
+		character: {
+			characterID: 10,
+			name: "Tyrion Lannister",
+			color: "#ffffff",
+			rating: 8
 		}
 	},
 	{
@@ -794,15 +788,13 @@ Sample Response:
 		role: {
 			roleID: 0,
 			name: "Actor"
-			color: "#12be29",
-			characters: [
-				{
-					characterID: 11,
-					name: "Jorah Mormont",
-					color: "#000000",
-					rating: 9
-				}
-			]
+			color: "#12be29"
+		},
+		character: {
+			characterID: 11,
+			name: "Jorah Mormont",
+			color: "#000000",
+			rating: 9
 		}
 	}
 ]
@@ -844,15 +836,13 @@ Sample Response:
 		role: {
 			roleID: 0,
 			name: "Actor",
-			color: "#12be29",
-			characters: [
-				{
-					characterID: 10,
-					name: "Tyrion Lannister",
-					color: "#ffffff",
-					rating: 8
-				}
-			]
+			color: "#12be29"
+		},
+		character: {
+			characterID: 10,
+			name: "Tyrion Lannister",
+			color: "#ffffff",
+			rating: 8
 		}
 	},
 	{
@@ -866,15 +856,13 @@ Sample Response:
 		role: {
 			roleID: 0,
 			name: "Actor"
-			color: "#12be29",
-			characters: [
-				{
-					characterID: 11,
-					name: "Jorah Mormont",
-					color: "#000000",
-					rating: 9
-				}
-			]
+			color: "#12be29"
+		},
+		character: {
+			characterID: 11,
+			name: "Jorah Mormont",
+			color: "#000000",
+			rating: 9
 		}
 	},
 	{
@@ -888,15 +876,13 @@ Sample Response:
 		role: {
 			roleID: 0,
 			name: "Actor"
-			color: "#12be29",
-			characters: [
-				{
-					characterID: 12,
-					name: "Daenerys Targaryen",
-					color: "#000000",
-					rating: 10
-				}
-			]
+			color: "#12be29"
+		},
+		character: {
+			characterID: 12,
+			name: "Daenerys Targaryen",
+			color: "#000000",
+			rating: 10
 		}
 	}
 ]
@@ -927,15 +913,13 @@ Sample Response:
 		role: {
 			roleID: 0,
 			name: "Actor"
-			color: "#12be29",
-			characters: [
-				{
-					characterID: 11,
-					name: "Jorah Mormont",
-					color: "#000000",
-					rating: 9
-				}
-			]
+			color: "#12be29"
+		},
+		character: {
+			characterID: 11,
+			name: "Jorah Mormont",
+			color: "#000000",
+			rating: 9
 		}
 	},
 	{
@@ -949,15 +933,13 @@ Sample Response:
 		role: {
 			roleID: 0,
 			name: "Actor"
-			color: "#12be29",
-			characters: [
-				{
-					characterID: 12,
-					name: "Daenerys Targaryen",
-					color: "#000000",
-					rating: 10
-				}
-			]
+			color: "#12be29"
+		},
+		character: {
+			characterID: 12,
+			name: "Daenerys Targaryen",
+			color: "#000000",
+			rating: 10
 		}
 	}
 ]
@@ -997,7 +979,11 @@ Sample Response:
 
 ### GET
 
+#### Responds with a list of all role objects on the server.
+
 ### POST
+
+#### Accepts a role object with at least minimum required data and responds with the full role object on the server.
 
 # /roles/:roleID
 
@@ -1005,9 +991,15 @@ Sample Response:
 
 ### GET
 
+#### Responds with the role object on the server associated with the referenced `roleID`.
+
 ### PUT
 
+#### Accepts a partial role object with at least one value to update and responds with the full updated role object on the server.
+
 ### DELETE
+
+#### Deletes the role object associated with the referenced `roleID` and responds with a list of remaining role objects on the server.
 
 # /roles/0/characters
 
