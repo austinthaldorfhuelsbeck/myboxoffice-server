@@ -23,6 +23,8 @@ Sample Response:
 		owned: false,
 		imgURL: "thematrix.jpg",
 		favorite: true,
+		logline: "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+		description: "Thomas A. Anderson is a man living two lives. By day he is an average computer programmer and by night a hacker known as Neo. Neo has always questioned his reality, but the truth is far beyond his imagination. Neo finds himself targeted by the police when he is contacted by Morpheus, a legendary computer hacker branded a terrorist by the government. As a rebel against the machines, Neo must confront the agents: super-powerful computer programs devoted to stopping Neo and the entire human rebellion.",
 		genres: [
 			{
 				genreID: 1,
@@ -68,6 +70,8 @@ Sample Response:
 	owned: false,
 	imgURL: "starwars.jpg",
 	favorite: false,
+	logline: "",
+	description: "",
 	genres: [
 		{
 			genreID: 8,
@@ -100,6 +104,8 @@ Sample Response:
 	owned: false,
 	imgURL: "thematrix.jpg",
 	favorite: true,
+	logline: "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+	description: "Thomas A. Anderson is a man living two lives. By day he is an average computer programmer and by night a hacker known as Neo. Neo has always questioned his reality, but the truth is far beyond his imagination. Neo finds himself targeted by the police when he is contacted by Morpheus, a legendary computer hacker branded a terrorist by the government. As a rebel against the machines, Neo must confront the agents: super-powerful computer programs devoted to stopping Neo and the entire human rebellion.",
 	genres: [
 		{
 			genreID: 1,
@@ -142,6 +148,8 @@ Sample Response:
 	owned: false,
 	imgURL: "thematrix.jpg",
 	favorite: true,
+	logline: "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+	description: "Thomas A. Anderson is a man living two lives. By day he is an average computer programmer and by night a hacker known as Neo. Neo has always questioned his reality, but the truth is far beyond his imagination. Neo finds himself targeted by the police when he is contacted by Morpheus, a legendary computer hacker branded a terrorist by the government. As a rebel against the machines, Neo must confront the agents: super-powerful computer programs devoted to stopping Neo and the entire human rebellion.",
 	genres: [
 		{
 			genreID: 1,
@@ -178,6 +186,8 @@ Sample Response:
 		owned: false,
 		imgURL: "starwars.jpg",
 		favorite: false,
+		logline: "",
+		description: "",
 		genres: [
 			{
 				genreID: 8,
@@ -306,19 +316,14 @@ Sample Response:
 			filmmakerID: 1,
 			name: "Keanu Reeves",
 			rating: 10,
-			imgURL: "keanureeves.jpg"
+			imgURL: "keanureeves.jpg",
+			description: ""
 		},
 		role: {
 			roleID: 0,
-			name: "Actor",
-			color: "#12be29"
+			name: "Actor"
 		},
-		character: {
-			characterID: 1,
-			name: "Neo",
-			color: "#798436",
-			rating: 10
-		}
+		characteName: "Neo"
 	},
 	{
 		filmCreditID: 2,
@@ -326,12 +331,12 @@ Sample Response:
 			filmmakerID: 2,
 			name: "Lana Wachowski",
 			rating: 8,
-			imgURL: "lanawachowski.jpg"
+			imgURL: "lanawachowski.jpg",
+			description: ""
 		},
 		role: {
 			roleID: 4,
-			name: "Director",
-			color: "#798436"
+			name: "Director"
 		}
 	}
 ]
@@ -357,23 +362,20 @@ Sample Response:
 [
 	{
 		filmCreditID: 1,
+		filmID: 1,
 		filmmaker: {
 			filmmakerID: 1,
 			name: "Keanu Reeves",
 			rating: 10,
-			imgURL: "keanureeves.jpg"
+			imgURL: "keanureeves.jpg",
+			description: ""
 		},
 		role: {
 			roleID: 0,
 			name: "Actor",
 			color: "#12be29"
 		},
-		character: {
-			characterID: 1,
-			name: "Neo",
-			color: "#798436",
-			rating: 10
-		}
+		characterName: "Neo"
 	},
 	{
 		filmCreditID: 2,
@@ -477,6 +479,8 @@ Sample Response:
 		owned: false,
 		imgURL: "westeros.jpg",
 		favorite: true,
+		logline: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for a millennia.",
+		description: "In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.",
 		genres: [
 			{
 				genreID: 1,
@@ -525,6 +529,8 @@ Sample Response:
 	owned: false,
 	imgURL: "futurama.jpg",
 	favorite: false,
+	logline: "",
+	description: "",
 	genres: [
 		{
 			genreID: 3,
@@ -558,6 +564,8 @@ Sample Response:
 	owned: false,
 	imgURL: "westeros.jpg",
 	favorite: true,
+	logline: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for a millennia.",
+	description: "In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.",
 	genres: [
 		{
 			genreID: 1,
@@ -588,7 +596,8 @@ Sample Request Body:
 	rating: 10,
 	watched: true,
 	owned: true,
-	favorite: true
+	favorite: true,
+	logline: "Philip J. Fry, a pizza delivery boy, is accidentally frozen in 1999 and thawed out on New Year's Eve 2999."
 }
 ```
 
@@ -604,6 +613,8 @@ Sample Response:
 	owned: true,
 	imgURL: "futurama.jpg",
 	favorite: true,
+	logline: "Philip J. Fry, a pizza delivery boy, is accidentally frozen in 1999 and thawed out on New Year's Eve 2999.",
+	description: "",
 	genres: [
 		{
 			genreID: 3,
@@ -635,6 +646,8 @@ Sample Response:
 		owned: true,
 		imgURL: "futurama.jpg",
 		favorite: true,
+		logline: "Philip J. Fry, a pizza delivery boy, is accidentally frozen in 1999 and thawed out on New Year's Eve 2999.",
+		description: "",
 		genres: [
 			{
 				genreID: 3,
@@ -770,12 +783,7 @@ Sample Response:
 			name: "Actor",
 			color: "#12be29"
 		},
-		character: {
-			characterID: 10,
-			name: "Tyrion Lannister",
-			color: "#ffffff",
-			rating: 8
-		}
+		characterName: "Tyrion Lannister"
 	},
 	{
 		seriesCreditID: 2,
@@ -790,12 +798,7 @@ Sample Response:
 			name: "Actor"
 			color: "#12be29"
 		},
-		character: {
-			characterID: 11,
-			name: "Jorah Mormont",
-			color: "#000000",
-			rating: 9
-		}
+		characterNName: "Jorah Mormont"
 	}
 ]
 ```
@@ -811,14 +814,8 @@ Sample Request Body:
 ```
 {
 	filmmaker: 12,
-	role: 1,
-	characters: [
-		{
-			characterID: 12,
-			name: "Daenerys Targaryen",
-			rating: 10
-		}
-	]
+	roleID: 0,
+	characterName: "Daenerys Targaryen"
 }
 ```
 
@@ -838,12 +835,7 @@ Sample Response:
 			name: "Actor",
 			color: "#12be29"
 		},
-		character: {
-			characterID: 10,
-			name: "Tyrion Lannister",
-			color: "#ffffff",
-			rating: 8
-		}
+		characterName: "Tyrion Lannister"
 	},
 	{
 		seriesCreditID: 2,
@@ -858,12 +850,7 @@ Sample Response:
 			name: "Actor"
 			color: "#12be29"
 		},
-		character: {
-			characterID: 11,
-			name: "Jorah Mormont",
-			color: "#000000",
-			rating: 9
-		}
+		characterName: "Jorah Mormont"
 	},
 	{
 		seriesCreditID: 3,
@@ -878,12 +865,7 @@ Sample Response:
 			name: "Actor"
 			color: "#12be29"
 		},
-		character: {
-			characterID: 12,
-			name: "Daenerys Targaryen",
-			color: "#000000",
-			rating: 10
-		}
+		characteName: "Daenerys Targaryen"
 	}
 ]
 ```
@@ -915,12 +897,7 @@ Sample Response:
 			name: "Actor"
 			color: "#12be29"
 		},
-		character: {
-			characterID: 11,
-			name: "Jorah Mormont",
-			color: "#000000",
-			rating: 9
-		}
+		characterName: "Jorah Mormont"
 	},
 	{
 		seriesCreditID: 3,
@@ -935,12 +912,7 @@ Sample Response:
 			name: "Actor"
 			color: "#12be29"
 		},
-		character: {
-			characterID: 12,
-			name: "Daenerys Targaryen",
-			color: "#000000",
-			rating: 10
-		}
+		characterName: "Daenerys Targaryen"
 	}
 ]
 ```
@@ -953,9 +925,64 @@ Sample Response:
 
 #### Responds with a list of all genre objects on the server.
 
+Sample Request:
+`GET /genres`
+
+Sample Response:
+```
+[
+	{
+		genreID: 1,
+		name: "action",
+		rating: 6,
+		color: "#156f3f"
+	},
+	{
+		genreID: 3,
+		name: "comedy",
+		rating: 9,
+		color: "#ffffff"
+	},
+	{
+		genreID: 8,
+		name: "scifi",
+		rating: 9,
+		color: "#3e33f5"
+	},
+	{
+		genreID: 10,
+		name: "fantasy",
+		rating: 9,
+		color: "#678ff7"
+	}
+]
+```
+
 ### POST
 
 #### Accepts a genre object with at least minimum required data and responds with the full genre object on the server.
+
+Sample Request:
+`POST /genres`
+
+Sample Request Body:
+```
+{
+	name: "romantic",
+	rating: 8,
+	color: "#ffa38f"
+}
+```
+
+Sample Response:
+```
+{
+	genreID: 11,
+	name: "romantic",
+	rating: 8,
+	color: "#ffa38f"
+}
+```
 
 # /genres/:genreID
 
@@ -965,13 +992,79 @@ Sample Response:
 
 #### Responds with the genre object on the server associated with the referenced `genreID`.
 
+Sample Request:
+`GET /genres/1`
+
+Sample Response:
+```
+{
+	genreID: 1,
+	name: "action",
+	rating: 6,
+	color: "#156f3f"
+}
+```
+
 ### PUT
 
 #### Accepts a partial genre object with at least one value to update and responds with the full updated genre object on the server.
 
+Sample Request:
+`PUT /genres/1`
+
+Sample Request Body:
+```
+{
+	color: "#ef7119"
+}
+```
+
+Sample Response:
+```
+{
+	genreID: 1,
+	name: "action",
+	rating: 6,
+	color: "#ef7119"
+}
+```
+
 ### DELETE
 
 #### Deletes the genre object associated with the referenced `genreID` and responds with a list of remaining genre objects on the server.
+
+Sample Request:
+`DELETE /genres/1`
+
+Sample Response:
+```
+[
+	{
+		genreID: 3,
+		name: "comedy",
+		rating: 9,
+		color: "#ffffff"
+	},
+	{
+		genreID: 8,
+		name: "scifi",
+		rating: 9,
+		color: "#3e33f5"
+	},
+	{
+		genreID: 10,
+		name: "fantasy",
+		rating: 9,
+		color: "#678ff7"
+	},
+	{
+		genreID: 11,
+		name: "romantic",
+		rating: 8,
+		color: "#ffa38f"
+	}
+]
+```
 
 # /roles
 
@@ -981,9 +1074,42 @@ Sample Response:
 
 #### Responds with a list of all role objects on the server.
 
+Sample Request:
+`GET /roles`
+
+Sample Response:
+```
+[
+	{
+		roleID: 0,
+		name: "Actor"
+	},
+	{
+		roleID: 4,
+		name: "Director"
+	}
+]
+```
+
 ### POST
 
 #### Accepts a role object with at least minimum required data and responds with the full role object on the server.
+
+Sample Request:
+`POST /roles`
+
+Sample Request Body:
+```
+{
+	name: "Producer"
+}
+```
+
+Sample Response:
+```
+	roleID: 5,
+	name: "Producer"
+```
 
 # /roles/:roleID
 
@@ -993,20 +1119,54 @@ Sample Response:
 
 #### Responds with the role object on the server associated with the referenced `roleID`.
 
+Sample Request:
+`GET /roles/4`
+
+Sample Response:
+```
+	roleID: 4,
+	name: "Director"
+```
+
 ### PUT
 
 #### Accepts a partial role object with at least one value to update and responds with the full updated role object on the server.
+
+Sample Request:
+`PUT /roles/5`
+
+Sample Request Body:
+```
+{
+	name: "Executive Producer"
+}
+```
+
+Sample Response:
+```
+	roleID: 5,
+	name: "Executive Producer"
+```
 
 ### DELETE
 
 #### Deletes the role object associated with the referenced `roleID` and responds with a list of remaining role objects on the server.
 
-# /roles/0/characters
+Sample Request:
+`DELETE /roles/5`
 
-## Available Methods:
-
-### GET
-
-#### Responds with a list of all character objects
+Sample Response:
+```
+[
+	{
+		roleID: 0,
+		name: "Actor"
+	},
+	{
+		roleID: 4,
+		name: "Director"
+	}
+]
+```
 
 # /filmmakers
